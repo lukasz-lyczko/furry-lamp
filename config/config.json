@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "Lv&5.NAW\\Gjwu/KSp5i%P59@p",
+    "database": "furry-lamp",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
