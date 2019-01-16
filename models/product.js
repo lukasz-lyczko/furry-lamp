@@ -3,7 +3,7 @@
 /** @namespace models.category */
 /** @namespace models.review */
 /** @namespace models.stock */
-/** @namespace models.sales_order_items */
+/** @namespace models.sales_order_item */
 module.exports = (sequelize, DataTypes) => {
     const product = sequelize.define('product', {
         name: {type: DataTypes.STRING, validate: {notEmpty: true}},
@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
         product.hasMany(models.image);
         product.hasMany(models.review);
         product.hasMany(models.stock, {onDelete: 'RESTRICT'});
-        product.hasMany(models.sales_order_items, {onDelete: 'RESTRICT'})
+        product.hasMany(models.sales_order_item, {onDelete: 'RESTRICT'})
     };
     return product;
 };
